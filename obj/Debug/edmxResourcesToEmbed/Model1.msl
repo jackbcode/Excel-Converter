@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Paragon_AccountsModelStoreContainer" CdmEntityContainer="Paragon_AccountsEntities">
+    <FunctionImportMapping FunctionImportName="pr_Accounts_GenerateBordeaux" FunctionName="Paragon_AccountsModel.Store.pr_Accounts_GenerateBordeaux">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Paragon_AccountsModel.pr_Accounts_GenerateBordeaux_Result">
+          <ScalarProperty Name="Policy_Number" ColumnName="Policy_Number" />
+          <ScalarProperty Name="Policyholder" ColumnName="Policyholder" />
+          <ScalarProperty Name="Commences" ColumnName="Commences" />
+          <ScalarProperty Name="Transaction" ColumnName="Transaction" />
+          <ScalarProperty Name="Addr1" ColumnName="Addr1" />
+          <ScalarProperty Name="Addr2" ColumnName="Addr2" />
+          <ScalarProperty Name="Addr3" ColumnName="Addr3" />
+          <ScalarProperty Name="Addr4" ColumnName="Addr4" />
+          <ScalarProperty Name="Postcode" ColumnName="Postcode" />
+          <ScalarProperty Name="InterestName" ColumnName="InterestName" />
+          <ScalarProperty Name="Buildingscover" ColumnName="Buildingscover" />
+          <ScalarProperty Name="Buildingssi" ColumnName="Buildingssi" />
+          <ScalarProperty Name="Contentscover" ColumnName="Contentscover" />
+          <ScalarProperty Name="Contentssi" ColumnName="Contentssi" />
+          <ScalarProperty Name="Allriskssi" ColumnName="Allriskssi" />
+          <ScalarProperty Name="Specitemssi" ColumnName="Specitemssi" />
+          <ScalarProperty Name="Account_Month" ColumnName="Account_Month" />
+          <ScalarProperty Name="Premium" ColumnName="Premium" />
+          <ScalarProperty Name="IPT" ColumnName="IPT" />
+          <ScalarProperty Name="Premium_Excluding_IPT" ColumnName="Premium Excluding IPT" />
+          <ScalarProperty Name="Commission" ColumnName="Commission" />
+          <ScalarProperty Name="Net_Premium_To_Underwriter" ColumnName="Net Premium To Underwriter" />
+          <ScalarProperty Name="Paragon_Fee" ColumnName="Paragon Fee" />
+          <ScalarProperty Name="Contsvolxs" ColumnName="Contsvolxs" />
+          <ScalarProperty Name="Contscompxs" ColumnName="Contscompxs" />
+          <ScalarProperty Name="Buildvolxs" ColumnName="Buildvolxs" />
+          <ScalarProperty Name="Buildcompxs" ColumnName="Buildcompxs" />
+          <ScalarProperty Name="ExpiryDate" ColumnName="ExpiryDate" />
+          <ScalarProperty Name="CoverType" ColumnName="CoverType" />
+          <ScalarProperty Name="AgeOfInsurer" ColumnName="AgeOfInsurer" />
+          <ScalarProperty Name="YearBuilt" ColumnName="YearBuilt" />
+          <ScalarProperty Name="Listed" ColumnName="Listed" />
+          <ScalarProperty Name="PersonalPossesions" ColumnName="PersonalPossesions" />
+          <ScalarProperty Name="Bedrooms" ColumnName="Bedrooms" />
+          <ScalarProperty Name="BNCB" ColumnName="BNCB" />
+          <ScalarProperty Name="CNCB" ColumnName="CNCB" />
+          <ScalarProperty Name="CyclesSI" ColumnName="CyclesSI" />
+          <ScalarProperty Name="FlatRoofPC" ColumnName="FlatRoofPC" />
+          <ScalarProperty Name="BusinessUse" ColumnName="BusinessUse" />
+          <ScalarProperty Name="LaptopSI" ColumnName="LaptopSI" />
+          <ScalarProperty Name="unid" ColumnName="unid" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

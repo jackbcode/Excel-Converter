@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Paragon_AccountsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="pr_Accounts_GenerateBordeaux" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Insco" Type="nvarchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="Paragon_AccountsModelStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Paragon_AccountsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Paragon_AccountsEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="pr_Accounts_GenerateBordeaux" ReturnType="Collection(Paragon_AccountsModel.pr_Accounts_GenerateBordeaux_Result)">
+            <Parameter Name="Insco" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="pr_Accounts_GenerateBordeaux_Result">
+          <Property Type="String" Name="Policy_Number" Nullable="true" MaxLength="18" />
+          <Property Type="String" Name="Policyholder" Nullable="true" MaxLength="149" />
+          <Property Type="String" Name="Commences" Nullable="true" MaxLength="8000" />
+          <Property Type="String" Name="Transaction" Nullable="true" MaxLength="14" />
+          <Property Type="String" Name="Addr1" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Addr2" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Addr3" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Addr4" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="Postcode" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="InterestName" Nullable="true" MaxLength="60" />
+          <Property Type="String" Name="Buildingscover" Nullable="true" MaxLength="10" />
+          <Property Type="Int32" Name="Buildingssi" Nullable="true" />
+          <Property Type="String" Name="Contentscover" Nullable="true" MaxLength="11" />
+          <Property Type="Int32" Name="Contentssi" Nullable="true" />
+          <Property Type="Int32" Name="Allriskssi" Nullable="true" />
+          <Property Type="Int32" Name="Specitemssi" Nullable="true" />
+          <Property Type="String" Name="Account_Month" Nullable="true" MaxLength="50" />
+          <Property Type="Double" Name="Premium" Nullable="true" />
+          <Property Type="Double" Name="IPT" Nullable="true" />
+          <Property Type="Double" Name="Premium_Excluding_IPT" Nullable="true" />
+          <Property Type="Double" Name="Commission" Nullable="true" />
+          <Property Type="Double" Name="Net_Premium_To_Underwriter" Nullable="true" />
+          <Property Type="Double" Name="Paragon_Fee" Nullable="true" />
+          <Property Type="String" Name="Contsvolxs" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Contscompxs" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Buildvolxs" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Buildcompxs" Nullable="true" MaxLength="30" />
+          <Property Type="DateTime" Name="ExpiryDate" Nullable="true" Precision="23" />
+          <Property Type="String" Name="CoverType" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="AgeOfInsurer" Nullable="true" Precision="12" Scale="0" />
+          <Property Type="Decimal" Name="YearBuilt" Nullable="true" Precision="12" Scale="0" />
+          <Property Type="String" Name="Listed" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="PersonalPossesions" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="Bedrooms" Nullable="true" Precision="12" Scale="0" />
+          <Property Type="String" Name="BNCB" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="CNCB" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="CyclesSI" Nullable="true" />
+          <Property Type="Int32" Name="FlatRoofPC" Nullable="true" />
+          <Property Type="String" Name="BusinessUse" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="LaptopSI" Nullable="true" />
+          <Property Type="Int32" Name="unid" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Paragon_AccountsModelStoreContainer" CdmEntityContainer="Paragon_AccountsEntities" >
+          <FunctionImportMapping FunctionImportName="pr_Accounts_GenerateBordeaux" FunctionName="Paragon_AccountsModel.Store.pr_Accounts_GenerateBordeaux">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="Paragon_AccountsModel.pr_Accounts_GenerateBordeaux_Result">
+                <ScalarProperty Name="Policy_Number" ColumnName="Policy_Number" />
+                <ScalarProperty Name="Policyholder" ColumnName="Policyholder" />
+                <ScalarProperty Name="Commences" ColumnName="Commences" />
+                <ScalarProperty Name="Transaction" ColumnName="Transaction" />
+                <ScalarProperty Name="Addr1" ColumnName="Addr1" />
+                <ScalarProperty Name="Addr2" ColumnName="Addr2" />
+                <ScalarProperty Name="Addr3" ColumnName="Addr3" />
+                <ScalarProperty Name="Addr4" ColumnName="Addr4" />
+                <ScalarProperty Name="Postcode" ColumnName="Postcode" />
+                <ScalarProperty Name="InterestName" ColumnName="InterestName" />
+                <ScalarProperty Name="Buildingscover" ColumnName="Buildingscover" />
+                <ScalarProperty Name="Buildingssi" ColumnName="Buildingssi" />
+                <ScalarProperty Name="Contentscover" ColumnName="Contentscover" />
+                <ScalarProperty Name="Contentssi" ColumnName="Contentssi" />
+                <ScalarProperty Name="Allriskssi" ColumnName="Allriskssi" />
+                <ScalarProperty Name="Specitemssi" ColumnName="Specitemssi" />
+                <ScalarProperty Name="Account_Month" ColumnName="Account_Month" />
+                <ScalarProperty Name="Premium" ColumnName="Premium" />
+                <ScalarProperty Name="IPT" ColumnName="IPT" />
+                <ScalarProperty Name="Premium_Excluding_IPT" ColumnName="Premium Excluding IPT" />
+                <ScalarProperty Name="Commission" ColumnName="Commission" />
+                <ScalarProperty Name="Net_Premium_To_Underwriter" ColumnName="Net Premium To Underwriter" />
+                <ScalarProperty Name="Paragon_Fee" ColumnName="Paragon Fee" />
+                <ScalarProperty Name="Contsvolxs" ColumnName="Contsvolxs" />
+                <ScalarProperty Name="Contscompxs" ColumnName="Contscompxs" />
+                <ScalarProperty Name="Buildvolxs" ColumnName="Buildvolxs" />
+                <ScalarProperty Name="Buildcompxs" ColumnName="Buildcompxs" />
+                <ScalarProperty Name="ExpiryDate" ColumnName="ExpiryDate" />
+                <ScalarProperty Name="CoverType" ColumnName="CoverType" />
+                <ScalarProperty Name="AgeOfInsurer" ColumnName="AgeOfInsurer" />
+                <ScalarProperty Name="YearBuilt" ColumnName="YearBuilt" />
+                <ScalarProperty Name="Listed" ColumnName="Listed" />
+                <ScalarProperty Name="PersonalPossesions" ColumnName="PersonalPossesions" />
+                <ScalarProperty Name="Bedrooms" ColumnName="Bedrooms" />
+                <ScalarProperty Name="BNCB" ColumnName="BNCB" />
+                <ScalarProperty Name="CNCB" ColumnName="CNCB" />
+                <ScalarProperty Name="CyclesSI" ColumnName="CyclesSI" />
+                <ScalarProperty Name="FlatRoofPC" ColumnName="FlatRoofPC" />
+                <ScalarProperty Name="BusinessUse" ColumnName="BusinessUse" />
+                <ScalarProperty Name="LaptopSI" ColumnName="LaptopSI" />
+                <ScalarProperty Name="unid" ColumnName="unid" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

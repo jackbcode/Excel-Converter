@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Paragon_AccountsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Paragon_AccountsEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="pr_Accounts_GenerateBordeaux" ReturnType="Collection(Paragon_AccountsModel.pr_Accounts_GenerateBordeaux_Result)">
+      <Parameter Name="Insco" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="pr_Accounts_GenerateBordeaux_Result">
+    <Property Type="String" Name="Policy_Number" Nullable="true" MaxLength="18" />
+    <Property Type="String" Name="Policyholder" Nullable="true" MaxLength="149" />
+    <Property Type="String" Name="Commences" Nullable="true" MaxLength="8000" />
+    <Property Type="String" Name="Transaction" Nullable="true" MaxLength="14" />
+    <Property Type="String" Name="Addr1" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Addr2" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Addr3" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Addr4" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Postcode" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="InterestName" Nullable="true" MaxLength="60" />
+    <Property Type="String" Name="Buildingscover" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="Buildingssi" Nullable="true" />
+    <Property Type="String" Name="Contentscover" Nullable="true" MaxLength="11" />
+    <Property Type="Int32" Name="Contentssi" Nullable="true" />
+    <Property Type="Int32" Name="Allriskssi" Nullable="true" />
+    <Property Type="Int32" Name="Specitemssi" Nullable="true" />
+    <Property Type="String" Name="Account_Month" Nullable="true" MaxLength="50" />
+    <Property Type="Double" Name="Premium" Nullable="true" />
+    <Property Type="Double" Name="IPT" Nullable="true" />
+    <Property Type="Double" Name="Premium_Excluding_IPT" Nullable="true" />
+    <Property Type="Double" Name="Commission" Nullable="true" />
+    <Property Type="Double" Name="Net_Premium_To_Underwriter" Nullable="true" />
+    <Property Type="Double" Name="Paragon_Fee" Nullable="true" />
+    <Property Type="String" Name="Contsvolxs" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Contscompxs" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Buildvolxs" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Buildcompxs" Nullable="true" MaxLength="30" />
+    <Property Type="DateTime" Name="ExpiryDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="CoverType" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="AgeOfInsurer" Nullable="true" Precision="12" Scale="0" />
+    <Property Type="Decimal" Name="YearBuilt" Nullable="true" Precision="12" Scale="0" />
+    <Property Type="String" Name="Listed" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="PersonalPossesions" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="Bedrooms" Nullable="true" Precision="12" Scale="0" />
+    <Property Type="String" Name="BNCB" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="CNCB" Nullable="true" MaxLength="30" />
+    <Property Type="Int32" Name="CyclesSI" Nullable="true" />
+    <Property Type="Int32" Name="FlatRoofPC" Nullable="true" />
+    <Property Type="String" Name="BusinessUse" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="LaptopSI" Nullable="true" />
+    <Property Type="Int32" Name="unid" Nullable="true" />
+  </ComplexType>
+</Schema>

@@ -1,0 +1,13 @@
+C:\Users\Jack\source\repos\ParagonAccountsNew\ParagonAccountsNew\bin\Debug\ParagonAccountsNew.exe.config
+C:\Users\Jack\source\repos\ParagonAccountsNew\ParagonAccountsNew\bin\Debug\ParagonAccountsNew.exe
+C:\Users\Jack\source\repos\ParagonAccountsNew\ParagonAccountsNew\bin\Debug\ParagonAccountsNew.pdb
+C:\Users\Jack\source\repos\ParagonAccountsNew\ParagonAccountsNew\bin\Debug\EntityFramework.dll
+C:\Users\Jack\source\repos\ParagonAccountsNew\ParagonAccountsNew\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jack\source\repos\ParagonAccountsNew\ParagonAccountsNew\bin\Debug\EntityFramework.xml
+C:\Users\Jack\source\repos\ParagonAccountsNew\ParagonAccountsNew\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jack\source\repos\ParagonAccountsNew\ParagonAccountsNew\obj\Debug\ParagonAccountsNew.csprojAssemblyReference.cache
+C:\Users\Jack\source\repos\ParagonAccountsNew\ParagonAccountsNew\obj\Debug\ParagonAccountsNew.csproj.CoreCompileInputs.cache
+C:\Users\Jack\source\repos\ParagonAccountsNew\ParagonAccountsNew\obj\Debug\ParagonAccountsNew.csproj.CopyComplete
+C:\Users\Jack\source\repos\ParagonAccountsNew\ParagonAccountsNew\obj\Debug\ParagonAccountsNew.exe
+C:\Users\Jack\source\repos\ParagonAccountsNew\ParagonAccountsNew\obj\Debug\ParagonAccountsNew.pdb
+C:\Users\Jack\source\repos\ParagonAccountsNew\ParagonAccountsNew\obj\Debug\ParagonAccountsNew.csproj.ResolveComReference.cache
